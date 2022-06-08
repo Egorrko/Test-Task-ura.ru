@@ -19,25 +19,25 @@
 
 В папке app находится файл `fizzbuzz.py`, в котором описан класс реализующий требуемое поведение:  
 При его инициализации происходит генерация всех возможных замен.  
-Функция `generator` возвращает итератор от `min` до `max`, который заменяет все числа в зависимости от self.rules
-Сейчас для взаимодействия прикручен CLI интерфейс - [typer](https://github.com/tiangolo/typer)
+Функция `generator` возвращает итератор от `min` до `max`, который заменяет все числа в зависимости от `self.rules`.  
+Сейчас для взаимодействия прикручен CLI интерфейс - [typer](https://github.com/tiangolo/typer).
 
 ### Установка и запуск
 Докер:
-1. cp env.example .env
-2. docker-compose run fizzbuzz --help
+1. `cp env.example .env`
+2. `docker-compose run fizzbuzz --help`
 
 Стандарт:
-1. cp env.example .env
-2. python -m venv env
-3. source env/bin/activate
-4. pip install -r requirements.txt
-5. python app/main.py --help
+1. `cp env.example .env`
+2. `python -m venv env`
+3. `source env/bin/activate`
+4. `pip install -r requirements.txt`
+5. `python app/main.py --help`
 
 
 ### Разработка и тесты
 1. Все как в стандартном деплое
-2. pip install -r requirements-dev.txt
+2. `pip install -r requirements-dev.txt`
 
 - Автотесты `pytest app/test.py`
 - Линтинг: `flake8 app`
